@@ -123,15 +123,14 @@ const Main = () => {
           justifyContent='center'
           color='#f1f1f1'
         >
+          <Text fontSize='1.4em' m='50px'>{result}</Text>
           <Flex
-            flexDir='column'
-            justify='flex-start'
             m='20px'
           >
-            <Text fontSize='1.8em'><b>{playerOne}</b>: {MOVE_IMAGES[playerOneMoveResult]}</Text>
-            <Text fontSize='1.8em'><b>{playerTwo}</b>: {MOVE_IMAGES[playerTwoMoveResult]}</Text>
+            <Text fontSize='1.8em'><b>{playerOne}</b> {MOVE_IMAGES[playerOneMoveResult]}</Text>
+            <Text fontSize='1.8em'> - </Text>
+            <Text fontSize='1.8em'>{MOVE_IMAGES[playerTwoMoveResult]} <b>{playerTwo}</b></Text>
           </Flex>
-          <Heading m='50px'>{result}</Heading>
         </Flex>
       )}
       {history.length !== 0 && (
