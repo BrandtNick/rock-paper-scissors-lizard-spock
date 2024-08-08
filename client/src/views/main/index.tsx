@@ -4,7 +4,6 @@ import {
   Flex,
   HStack,
   Input,
-  Heading,
   Text,
 } from '@chakra-ui/react';
 import {ALL_MOVES, MOVES, MOVE_IMAGES} from '../../constants';
